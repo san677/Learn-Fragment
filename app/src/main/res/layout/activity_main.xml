@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+
+          />
+
+    <Button
+        android:id="@+id/ButtonFragment1"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/fragment_1"
+
+        android:textSize="15sp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonFragment2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer"
+          />
+
+    <Button
+        android:id="@+id/ButtonFragment2"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/fragment_2"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ButtonFragment1"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainer"
+        android:textSize="15sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
